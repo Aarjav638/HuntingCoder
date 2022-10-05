@@ -1,5 +1,7 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import Blog from './blog'
 
 export default function Home() {
   return (
@@ -25,17 +27,17 @@ export default function Home() {
           <div>
             <h3 className={styles.h3}>How to learn JavaScript in 2022?</h3>
             <p>JavaScript is the language used to design logic for the web. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic error voluptatum impedit!</p>
-            <button className={styles.btn}>Read More</button>
+            <Link href={"/blog"}><button className={styles.btn} >Read More</button></Link>
           </div>
           <div>
             <h3 className={styles.h3}>How to learn JavaScript in 2022?</h3>
             <p className={styles.p}>JavaScript is the language used to design logic for the web</p>
-            <button className={styles.btn}>Read More</button>
+            <Link href={"blogpost/how-to-learn"}><button className={styles.btn}>Read More</button></Link>
           </div>
           <div>
             <h3 className={styles.h3}>How to learn JavaScript in 2022?</h3>
             <p>JavaScript is the language used to design logic for the web</p>
-            <button className={styles.btn}>Read More</button>
+            <Link href={"blogpost/how-to-learn"}><button className={styles.btn}>Read More</button></Link>
           </div>
         </div>
       </main>
