@@ -1,9 +1,6 @@
 {
   "name": "huntingcoder",
   "private": true,
-  "engines": {
-    "node": "16.17.1"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
